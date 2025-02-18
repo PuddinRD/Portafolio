@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de desarrollo web frontend">
+    <meta name="keywords" content="desarrollo web, frontend, portfolio, HTML, CSS, JavaScript">
+    <title>Mi Portfolio - Desarrollador Frontend</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-light">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white">
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/PuddinRD/Materiales/refs/heads/main/Felix.jpg" alt="Foto de perfil" class="profile-img mb-4">
+            <h1 class="name-animation mb-3">Felix Vasquez</h1>
+            <p class="lead">Desarrollador Frontend Senior</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead">
+                        Soy un desarrollador frontend apasionado con más de 5 años de experiencia en la creación de experiencias web únicas y atractivas. Me especializo en React, Vue.js y tecnologías modernas de desarrollo web.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4><i class="fas fa-code"></i> Habilidades Técnicas</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check"></i> HTML5, CSS3, JavaScript</li>
+                                <li><i class="fas fa-check"></i> React.js, Vue.js</li>
+                                <li><i class="fas fa-check"></i> Bootstrap, Tailwind CSS</li>
+                                <li><i class="fas fa-check"></i> Git, GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4><i class="fas fa-brain"></i> Soft Skills</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check"></i> Trabajo en equipo</li>
+                                <li><i class="fas fa-check"></i> Comunicación efectiva</li>
+                                <li><i class="fas fa-check"></i> Resolución de problemas</li>
+                                <li><i class="fas fa-check"></i> Gestión del tiempo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/almadraba.jpg" class="img-fluid img-thumbnail mb-3" alt="Proyecto 1">
+                        <h4>E-commerce Platform</h4>
+                        <p>Desarrollo de una plataforma completa de comercio electrónico con React y Node.js</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-primary">Ver Demo</a>
+                            <a href="#" class="btn btn-outline-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <img src="https://www.tucanit.com/wp-content/uploads/2021/10/oficina.jpg" class="img-fluid img-thumbnail mb-3" alt="Proyecto 2">
+                        <h4>Dashboard Analytics</h4>
+                        <p>Dashboard interactivo para análisis de datos empresariales con Vue.js</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-primary">Ver Demo</a>
+                            <a href="#" class="btn btn-outline-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIjzhc7m8zFXXhW09E_ZnBNVNRCAwdKZHAQ&s" class="img-fluid img-thumbnail mb-3" alt="Proyecto 3">
+                        <h4>Social Media App</h4>
+                        <p>Aplicación social con características de tiempo real usando Firebase</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="btn btn-primary">Ver Demo</a>
+                            <a href="#" class="btn btn-outline-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experiencia Profesional</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <h4><i class="fas fa-building"></i> Tech Solutions Inc.</h4>
+                        <p>Senior Frontend Developer</p>
+                        <p>2020 - Presente</p>
+                        <ul>
+                            <li>Desarrollo de aplicaciones web escalables</li>
+                            <li>Liderazgo de equipo de 5 desarrolladores</li>
+                            <li>Implementación de CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <h4><i class="fas fa-laptop-code"></i> Digital Innovation</h4>
+                        <p>Frontend Developer</p>
+                        <p>2018 - 2020</p>
+                        <ul>
+                            <li>Desarrollo de interfaces de usuario</li>
+                            <li>Optimización de rendimiento</li>
+                            <li>Integración de APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card p-3">
+                        <h4><i class="fas fa-code"></i> StartUp Hub</h4>
+                        <p>Junior Developer</p>
+                        <p>2016 - 2018</p>
+                        <ul>
+                            <li>Desarrollo de componentes web</li>
+                            <li>Mantenimiento de código</li>
+                            <li>Testing y debugging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center gradient-text mb-5">Contacto</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="social-icons mb-3">
+            <a href="https://www.facebook.com/Yael.Vasquez.Alc" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/yael_vasquez12/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@yaelvasquez1205" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/YaelV1205" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+            <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
