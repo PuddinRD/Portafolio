@@ -224,50 +224,42 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Función para manejar el modo oscuro
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const icon = themeToggle.querySelector('i');
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            const icon = themeToggle.querySelector('i');
 
-        // Verificar si hay una preferencia guardada
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            body.setAttribute('data-theme', currentTheme);
-            if (currentTheme === 'dark') {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
+            // Función para actualizar el icono
+            function updateIcon(isDark) {
+                if (isDark) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
             }
-        }
 
-        // Manejar el cambio de tema
-        themeToggle.addEventListener('click', () => {
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.setAttribute('data-theme', 'dark');
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'dark');
+            // Función para establecer el tema
+            function setTheme(isDark) {
+                if (isDark) {
+                    body.setAttribute('data-theme', 'dark');
+                } else {
+                    body.removeAttribute('data-theme');
+                }
+                updateIcon(isDark);
             }
-        });
 
-        // Detectar preferencia del sistema
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            body.setAttribute('data-theme', 'dark');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        }
+            // Establecer tema inicial
+            const savedTheme = localStorage.getItem('theme');
+            setTheme(savedTheme === 'dark');
 
-        // Escuchar cambios en la preferencia del sistema
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-            const newTheme = event.matches ? 'dark' : 'light';
-            body.setAttribute('data-theme', newTheme);
-            icon.classList.toggle('fa-sun', event.matches);
-            icon.classList.toggle('fa-moon', !event.matches);
-            localStorage.setItem('theme', newTheme);
+            // Manejar el click en el botón
+            themeToggle.addEventListener('click', () => {
+                const isDark = body.getAttribute('data-theme') === 'dark';
+                setTheme(!isDark);
+                localStorage.setItem('theme', !isDark ? 'dark' : 'light');
+            });
         });
     </script>
 </body>
