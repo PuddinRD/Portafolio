@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +8,7 @@
     <title>Mi Portfolio - Desarrollador Frontend</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -223,45 +217,8 @@
     </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const themeToggle = document.getElementById('theme-toggle');
-            const body = document.body;
-            const icon = themeToggle.querySelector('i');
+    <script type="module" src="script.js"></script>
 
-            // Función para actualizar el icono
-            function updateIcon(isDark) {
-                if (isDark) {
-                    icon.classList.remove('fa-moon');
-                    icon.classList.add('fa-sun');
-                } else {
-                    icon.classList.remove('fa-sun');
-                    icon.classList.add('fa-moon');
-                }
-            }
-
-            // Función para establecer el tema
-            function setTheme(isDark) {
-                if (isDark) {
-                    body.setAttribute('data-theme', 'dark');
-                } else {
-                    body.removeAttribute('data-theme');
-                }
-                updateIcon(isDark);
-            }
-
-            // Establecer tema inicial
-            const savedTheme = localStorage.getItem('theme');
-            setTheme(savedTheme === 'dark');
-
-            // Manejar el click en el botón
-            themeToggle.addEventListener('click', () => {
-                const isDark = body.getAttribute('data-theme') === 'dark';
-                setTheme(!isDark);
-                localStorage.setItem('theme', !isDark ? 'dark' : 'light');
-            });
-        });
-    </script>
 </body>
 </html>
 
