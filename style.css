@@ -8,9 +8,9 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #05242c;
-    --secondary-color: #06010e;
-    --text-color: #e0e0e0;
+    --primary-color: #61dafb;
+    --secondary-color: #bb86fc;
+    --text-color: #ffffff;
     --bg-color: #121212;
     --card-bg: #1e1e1e;
     --hover-color: #90caf9;
