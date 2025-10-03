@@ -113,3 +113,18 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* Cambiar bordes de las imágenes en los proyectos */
+.project-card img {
+    border: 3px solid var(--primary-color); /* Borde más grueso y color primario */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en las imágenes */
+.project-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--hover-color); /* Cambia color al pasar el mouse */
+}
